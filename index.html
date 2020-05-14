@@ -7,24 +7,7 @@
 
   $( document ).ready(function() {
 
-    //Jquery is ready:
 
-    var offset = $("#button-wrapper").offset().top;
-
-    $( window ).scroll(function() {
-
-      //console.log(offset);
-      var scrollval = $( window ).scrollTop();
-      console.log(scrollval);
-
-      if(scrollval > offset - 20){
-
-        $("#button-wrapper").css("top",String(scrollval + 20 - offset) + "px");
-
-      }else{
-        $("button-wrapper").css("top",0);
-      }
-    });
 
   });
 
@@ -80,36 +63,7 @@ h2{
     font-size:smaller;
     text-align:right;
   }
-  #RSVP-button{
-    border:2px solid black;
-    background-color: red;
-    color: white;
-    padding: 20px;
-    margin: 10px;
-    border-radius:10px;
-    text-align:center;
-    display:inline-block;
-  }
-  #RSVP-button:hover{
-    text-decoration:underline;
-    background-color: #ff9000;
-  }
-  #RSVP-button:active{
-    background-color:darkred;
-  }
-  #RSVP-link:visited{
-    color:black;
-  }
-  #RSVP-button{
-    margin:0 auto;
-    text-align:center;
-  }
-  #button-wrapper{
-    margin:0 auto;
-display:block;
-text-align:center;
-position:relative;
-  }
+
   </style>
 </head>
 <body>
@@ -117,14 +71,16 @@ position:relative;
     <h1>
 Coming June 2021: Andy and Tessa's Wedding!
 </h1>
-<div id='button-wrapper'><a id="RSVP-link" href="https://forms.gle/NZo9hc6XrjhXKuvY6"><div id="RSVP-button">Click to RSVP!</div></a></div>
-<div id="navbar"><a href="#Event Details">Event Details</a> | <a href="#Getting to Asheville">Getting to Asheville</a> | <a href="#Staying in Asheville">Staying in Asheville</a> | <a href="#What to Do in Asheville">What to Do in Asheville</a> | <a href="#Gifts">Gifts</a> | <a href="#Contact Us">Contact Us</a>
+<div id="navbar"><a href="#RSVP">RSVP</a> | <a href="#Event Details">Event Details</a> | <a href="#Getting to Asheville">Getting to Asheville</a> | <a href="#Staying in Asheville">Staying in Asheville</a> | <a href="#What to Do in Asheville">What to Do in Asheville</a> | <a href="#Gifts">Gifts</a> | <a href="#Contact Us">Contact Us</a>
 </div>
 
 <img class="center" src="001.jpeg"></img>
 
-<h2>Event Details
-</h2>
+<h2><a name="RSVP">RSVP</a></h2>
+<p>Please let us know if you're attending <a href="https://forms.gle/NZo9hc6XrjhXKuvY6"> by clicking here.</a></p>
+<p class='top'><a href="#">[ top ]</a></p>
+<h2><a name="Event Details">Event Details
+</a></h2>
 <h3>Sunday, June 13th, 2021</h3>
 <p>The ceremony and reception will take place at <a target="_blank" href="https://g.page/mybelovedhomewood?share">Homewood Manor, 19 Zillicoa St., Asheville NC 28801</a>.</p>
 <p><b>When:</b> 4:30pm to 10:00pm. Guest arrival: 4:00 to 4:30.</p>
@@ -169,7 +125,7 @@ Asheville, NC, 28801</p>
 <h4>1 Page Ave, Asheville, NC 28801</h4>
 <p>Downtown Asheville is small and easily walkable, so you should feel free to explore if you have an hour or two. But this is a good place to start and it's Gerry's favorite. It's a historic building that was renovated with shops, restaurants, and our favorite wine bar, Santé. (Also check out the nearby bookstore Malaprop's at 55 Haywood St., one of the biggest indie bookstores in the Southeast.)</p>
 <h3>Botanical Gardens</h3>
-<h4>151 W T. Weaver Boulevard, Asheville, NC 28804</h4>
+<h4>151 W T. Weaver Boulevard, Asheville, NC 28804 | <a target="_blank" href="https://ashevillebotanicalgardens.org/">website</a></h4>
 <p>The Botanical Gardens are right next to the University of North Carolina Asheville, which are both just a mile from downtown—a short car ride and free parking and admission.</p>
 <h3>Asheville Brewery District ("The South Slope")</h3>
 <h4><a target="_blank" href="https://goo.gl/maps/TJLMaqiJSoiMfgXw7">Google Maps link</a></h4>
@@ -198,10 +154,10 @@ Asheville, NC, 28801</p>
 </h2>
 <p>Feel free to contact us at: tessa.and.andy.paul@gmail.com</p>
 <p class='top'><a href="#">[ top ]</a></p>
-<p style="text-align:center">
+<p style="text-align:center; margin-top:40px">
   <br/>* * *<br/>
 </p>
-<img class="center" src="darcy-sketch.png"></img>
+<img class="center" style="margin-top:40px" src="darcy-sketch.png"></img>
 
 </div>
 </body>
