@@ -2,7 +2,32 @@
 <html>
 <head>
   <title>Andy and Tessa's Wedding</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
+
+  $( document ).ready(function() {
+
+    //Jquery is ready:
+
+    var offset = $("#button-wrapper").offset().top;
+
+    $( window ).scroll(function() {
+
+      //console.log(offset);
+      var scrollval = $( window ).scrollTop();
+      console.log(scrollval);
+
+      if(scrollval > offset - 20){
+
+        $("#button-wrapper").css("top",String(scrollval + 20 - offset) + "px");
+
+      }else{
+        $("button-wrapper").css("top",0);
+      }
+    });
+
+  });
+
   </script>
   <style>
   body{
@@ -83,6 +108,7 @@ h2{
     margin:0 auto;
 display:block;
 text-align:center;
+position:relative;
   }
   </style>
 </head>
